@@ -1,0 +1,546 @@
+//VARIABLES
+
+//COLORS
+@darkBlueColor: #445161;
+@brightGreyColor: #f5f5f5;
+
+//FONTS
+
+//END OF VARIABLES
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    font-family: arial, sans-serif;
+    
+    h2 {
+        margin-top: 0;
+        color: @darkBlueColor;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    h3 {
+        margin-top: 0;
+        color: @darkBlueColor;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    p, a, input, textarea {
+        color:  #333;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+//HEADER
+    header {
+        position: relative;
+        
+        height: 220px;
+        background-color: @darkBlueColor;
+        
+        font-weight: 400;
+        color: #fff;
+        
+        padding: 50px;
+        
+        h1 {
+            margin: 0;
+            
+            font-size: 60px;
+            font-weight: 400;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 20px 0 0 0;
+            float: left;
+            
+            li {
+                list-style: none;
+                
+                font-size: 20px;
+                line-height: 36px;
+            }
+        }
+        
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            display: block;
+            
+            margin: 50px;
+            
+            width: 469px;
+            height: 214px;
+            
+            background-color: #fff;
+        }
+    }
+//END OF HEADER
+    
+//ABOUT PRODUCT
+    .aboutProduct {
+        position: relative;
+        
+        padding: 50px;
+        
+        h2 {
+            display: inline-block;
+        }
+        
+        p {
+            max-width: 649px;
+            text-align: justify;
+        }
+        
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 50px;
+            
+            width: 430px;
+            height: 245px;
+            
+            background-color: @darkBlueColor;
+        }        
+    }
+//END OF ABOUT PRODUCTS
+    
+//DIGNITY PRODUCTS
+    .dignityProducts {
+        background-color: @brightGreyColor;
+        
+        float: left;
+        
+        padding: 50px;
+        
+        h2 {
+            margin: 0;
+            padding-bottom: 30px;
+            
+            text-align: center;
+        }
+        
+        div {
+            width: 40%;
+            
+            float: left;
+            
+            margin: 10px 30px;
+            padding-left: 50px;
+            
+            background: url(../images/plus_icon.png) no-repeat;
+            background-size: 35px;
+            
+            color: #333;
+            line-height: 24px;
+            text-align: justify;
+            
+            &:hover {
+                background-color: darken(@brightGreyColor, 5%);
+                cursor: default;
+            }
+        }
+    }
+//END OF DIGNITY PRODUCTS
+    
+//SCREENSHOTS
+    .screenshots {
+        padding: 50px;
+        float: left;
+        
+        h2 {
+            text-align: center;
+        }
+        
+        div {
+            width: 50%;
+            
+            float: left;
+            
+            img {
+                width: 200px;
+                height: 150px;
+                
+                margin: 15px;
+                
+                float: left;
+                
+                background-color: @darkBlueColor;
+            }
+            
+            h3, p {
+                margin: 15px;
+            }
+            
+            p {
+                text-align: justify;
+            }
+        }
+    }
+//END OF SCREENSHOTS
+    
+//REVIEWS
+    .reviews {
+        float: left;
+        
+        padding: 50px;
+        
+        background-color: @brightGreyColor;
+        
+        h2 {
+            text-align: center;
+        }
+        
+        div {
+            float: left;
+            
+            margin: 0 30px;
+            
+            width: 44%;
+            
+            img {
+                display: inline-block;
+                float: left;
+                
+                width: 75px;
+                height: 75px;
+                
+                margin-right: 15px;
+                
+                background-color: @darkBlueColor;
+                
+                border-radius: 50%;
+            }
+            
+            p {
+                position: relative;
+                
+                margin-top: 0;
+                margin-left: 120px;
+                
+                background-color: #ececec;
+                
+                font-size: 14px;
+                font-style: italic;
+                font-weight: bold;
+                
+                &:before {
+                    position: absolute;
+                    display: block;
+                    
+                    content: '';
+                    
+                    top: 20px;
+                    left: -15px;
+                    
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 15px 15px 15px 0;
+                    border-color: transparent #ececec transparent transparent;
+                }
+                
+                span {
+                    display: inline-block;
+                    margin-top: 10px;
+                    
+                    color: #989898;
+                    
+                    font-style: normal;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+//END OF REVIEWS
+
+//BUY IT NOW
+    .buyItNow {
+        float: left;
+        width: 100%;
+        padding: 50px;
+        
+        box-sizing: border-box;
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .buyItNow__flexWrapper {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            
+            div {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                flex-grow: 1;
+                
+                max-width: 400px;
+                align-self: flex-end;
+                
+                margin: 0 20px;
+                padding: 30px;
+                box-sizing: border-box;
+                
+                background-color: @darkBlueColor;
+                border-radius: 10px;
+                
+                h3, p, a {
+                    text-align: center;
+                }
+                
+                h3 {
+                    color: #fff;
+                }
+                
+                .price {
+                    display: inline-block;
+                    background-color: #fff;
+                    
+                    color: @darkBlueColor;
+                    font-size: 40px;
+                    line-height: 70px;
+                    margin: 0 -26px;
+                }
+                
+                ul {
+                    padding-left: 20px;
+                    
+                    li {
+                        color: #fff;
+                        list-style: decimal;
+                        
+                        line-height: 30px;
+                    }
+                }
+                
+                a {
+                    display: inline-block;
+                    line-height: 50px;
+                    
+                    background-color: #fff;
+                    
+                    border-radius: 10px;
+                    border: 3px solid #fff;
+                    
+                    color: @darkBlueColor;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    
+                    font-size: 18px;
+                    font-weight: 700;
+                    
+                    &:hover {
+                        color: #fff;
+                        background-color: @darkBlueColor;
+                        border: 3px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+//END OF BUY IT NOW
+    
+//CONTACTS
+    .contacts {
+        float: left;
+        width: 100%;
+        
+        padding: 50px;
+        box-sizing: border-box;
+        
+        background-color: @darkBlueColor;
+        
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+        
+        .contacts__flexWrapper {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            
+            .inputForm, .socialLinks {
+                flex-grow: 1;
+            }
+            
+            .inputForm {
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                justify-content: center;
+                
+                margin: 0 40px;
+                
+                fieldset {
+                    border: none;
+                    width: 100%;
+                    
+                    input, textarea {
+                        width: inherit;
+                        
+                        padding: 5px 10px;
+                        
+                        font: inherit;
+                        color: @darkBlueColor;
+                        
+                        box-sizing: border-box;
+                        border-radius: 5px;
+                        border-style: none;
+                        
+                        line-height: 20px;
+                        
+                        &:focus, &:hover {
+                            outline-style: none;
+                            background-color: darken(#fff,10%);
+                        }
+                    }
+                    
+                    input[type="email"] {
+                        margin: 20px 0;
+                    }
+                    
+                    input[type="submit"] {
+                        display: block;
+                        
+                        margin: 20px auto;
+                        
+                        width: 150px;
+                        
+                        background-color: #fff;
+                        border: 3px solid #fff;
+                        border-radius: 5px;
+                        
+                        color: @darkBlueColor;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        
+                        cursor: pointer;
+                        
+                        &:hover {
+                            background-color: @darkBlueColor;
+                            color: #fff;
+                            border: 3px solid #fff;
+                        }
+                    }
+                    
+                    textarea {
+                        height: 170px;
+                        resize: none;
+                    }
+                }
+            }
+            
+            .socialLinks {
+                margin: 0 40px;
+                
+                p {
+                    margin: 0;
+                    
+                    color: #fff;
+                    line-height: 50px;
+                    padding-left: 40px;
+                }
+                
+                &__skype {
+                    background: url(../images/skype_icon.png) no-repeat left center;
+                }
+                
+                &__icq {
+                    background: url(../images/icq_icon.png) no-repeat left center;
+                }
+                
+                &__email {
+                    background: url(../images/email_icon.png) no-repeat left center;
+                }
+                
+                &__phone {
+                    background: url(../images/phone_icon.png) no-repeat left center;
+                }
+                
+                div {
+                    float: left;
+                    margin-top: 10px;
+                    
+                    a {
+                        display: inline-block;
+                        float: left;
+                        
+                        width: 55px;
+                        height: 55px;
+                        
+                        padding: 0;
+                        margin: 10px;
+                        box-sizing: border-box;
+                        
+                        background-color: #fff;
+                        border-radius: 50%;
+                        border: 3px solid #fff;
+                        
+                        color: @darkBlueColor;
+                        text-align: center;
+                        font-size: 30px;
+                        line-height: 55px;
+                        
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        
+                        &:hover {
+                            border: 3px solid #fff;
+                            background-color: @darkBlueColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+//END OF CONTACTS
+    
+//FOOTER
+    footer {
+        width: 100%;
+        
+        float: left;
+        
+        background-color: @brightGreyColor;
+        text-align: center;
+    }
+//END OF FOOTER
+}
